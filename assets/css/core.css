@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Google fonts
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ==========================================================================
+   Default CSS
+   ========================================================================== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    background: transparent;
+    line-height: 26px;
+    font-weight: 400;
+    color: #726F84;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    transition: .3s;
+    outline: 0;
+    color: #8F8DA0;
+    font-family: 'Jost', sans-serif;
+  }
+  a:hover,
+  a:focus,
+  a:active,
+  button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Jost', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    font-size: 85px;
+    color: #0F0D1D;
+    line-height: 95px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #0F0D1D;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #0F0D1D;
+    font-weight: 500;
+  }
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0F0D1D;
+  }
+  input,
+  input:hover,
+  input:focus,
+  input[type=text],
+  input[type=email],
+  textarea,
+  textarea:hover,
+  textarea:focus,
+  button,
+  button:hover,
+  button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0px;
+    outline: none;
+  }
+  .creative-btn {
+    display: inline-block;
+    background: #3C72FC;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 77px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 0px 58px;
+    font-weight: 600;
+    height: 77px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #3C72FC;
+  }
+  .creative-btn:hover {
+    background: none;
+    border: 1px solid #FBFDFF;
+    color: #fff;
+  }
+  .section-bg-1{
+      background: #F2F4F8;
+  }
+  .section-bg-2{
+      background: #07122D;
+  }
+  .section-padding {
+    padding: 120px 0px;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .no-gutters{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .section-title h2{
+    margin-bottom: 30px;
+  }
+.theme-bg{
+	background: #3c72fc;
+}
+  /* ==========================================================================
+   Grid CSS
+   ========================================================================== */
+   .container-fluid{
+    max-width: 1920px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+.container{
+      max-width: 1460px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-12{
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+.col-11{
+  max-width: 91.66%;
+  flex: 0 0 91.66%;
+}
+.col-10{
+  max-width: 83.30%;
+  flex: 0 0 83.30%;
+}
+.col-9{
+  max-width: 74.97%;
+  flex: 0 0 74.97%;
+}
+.col-8{
+    max-width: 66.64%;
+    flex: 0 0 66.64%;
+}
+.col-7{
+  max-width: 58.31%;
+  flex: 0 0 58.31%;
+}
+.col-6{
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+.col-5{
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+}
+.col-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.col-3{
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-2{
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+}
+.col-1{
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+}
+.col-12, .col-11,  .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+.offset-col-1{
+  margin-left: 8.33%;
+}
+  /* ==========================================================================
+   Black Overlay 
+   ========================================================================== */
+.posr-z-index {
+	z-index: 5;
+	position: relative;
+}
+
+[data-overlay] {
+	position: relative;
+}
+[data-overlay]::before {
+	position: absolute;
+  content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	background: #07122D none repeat scroll 0 0;
+}
+[data-overlay="3"]::before {
+	opacity: 0.3;
+}
+[data-overlay="4"]::before {
+	opacity: 0.4;
+}
+[data-overlay="5"]::before {
+	opacity: 0.5;
+}
+[data-overlay="6"]::before {
+	opacity: 0.6;
+}
+[data-overlay="7"]::before {
+	opacity: 0.7;
+}
+[data-overlay="8"]::before {
+	opacity: 0.8;
+}
+[data-overlay="9"]::before {
+	opacity: 0.9;
+}
+[data-overlay="9.8"]::before {
+	opacity: 98%;
+}

@@ -1,0 +1,93 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6bc92767e3d58e2056150700eafb94cb") format("truetype"),
+url("./flaticon.woff?6bc92767e3d58e2056150700eafb94cb") format("woff"),
+url("./flaticon.woff2?6bc92767e3d58e2056150700eafb94cb") format("woff2"),
+url("./flaticon.eot?6bc92767e3d58e2056150700eafb94cb#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6bc92767e3d58e2056150700eafb94cb#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "search": "\f101",
+    "check": "\f102",
+    "quality": "\f103",
+    "user": "\f104",
+    "call": "\f105",
+    "placeholder": "\f106",
+    "right-arrow": "\f107",
+    "paper-plane": "\f108",
+    "close": "\f109",
+    "up-arrow": "\f10a",
+    "brainstorming": "\f10b",
+    "left-arrow": "\f10c",
+    "right-arrow-1": "\f10d",
+    "comment": "\f10e",
+    "minus-sign": "\f10f",
+    "checked": "\f110",
+    "envelope": "\f111",
+);
+
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-quality:before {
+    content: map-get($flaticon-map, "quality");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-close:before {
+    content: map-get($flaticon-map, "close");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon-map, "up-arrow");
+}
+.flaticon-brainstorming:before {
+    content: map-get($flaticon-map, "brainstorming");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon-map, "right-arrow-1");
+}
+.flaticon-comment:before {
+    content: map-get($flaticon-map, "comment");
+}
+.flaticon-minus-sign:before {
+    content: map-get($flaticon-map, "minus-sign");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}

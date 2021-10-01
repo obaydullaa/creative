@@ -1,0 +1,1571 @@
+/* ==========================================================================
+    Header Css Start
+  ========================================================================== */
+  .transparent-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid #707070;
+    padding: 0px 50px;
+  }
+.main-header{
+  position: relative;
+  z-index: 91;
+}
+.current-menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.menu-left{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	position: relative;
+	float: left;
+	padding: 50px 60px;
+	padding-left: 0;
+	border-right: 1px solid #707070;
+}
+.main-menu{
+   padding-left: 50px;
+}
+
+.menu_right {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.menu-all-social {
+	position: relative;
+	display: block;
+	float: left;
+}
+.menu-social {
+	display: flex;
+	align-items: center;
+	padding: 19px 0;
+}
+.header-search-wrap {
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.header-info {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+  .main-menu ul li {
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+  }
+  .main-menu ul li:hover > a {
+    color:#2D95FD;
+  }
+  .main-menu ul li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+    padding: 30px 0px;
+  }
+  .main-menu ul li:hover > .submenu {
+    top: 136%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .main-menu ul li .submenu {
+    position: absolute;
+    background: #fff;
+    min-width: 240px;
+    transition: 0.3s;
+    top: 110%;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 3px solid #2D95FD;
+    z-index: 99;
+    box-shadow: 0px 15px 30px 0px rgba(0, 2, 98, 0.1);
+    text-align: left;
+  }
+  .main-menu ul li .submenu li {
+    display: block;
+    margin: 0;
+  }
+  .main-menu ul li .submenu li a {
+    color: #111111;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  .main-menu ul li .submenu li .submenu {
+    left: 100%;
+    top: 0;
+  }
+  .main-menu ul li .submenu li:hover > a {
+    color: #2D95FD;
+  }
+  .main-menu ul li .submenu li {
+    border-bottom: 1px solid #eeeded;
+  }
+  .main-menu ul li .submenu li:last-child{
+    border: none;
+  }
+  .header-bar{
+    cursor: pointer;
+    float: right;
+    display: none;
+  }
+  .header-bar span {
+    background: #fff;
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin-top: 7px;
+  }
+.menu-social ul li {
+  display: inline-block;
+	margin-left: 30px;
+}
+
+.main-menu li a i {
+	vertical-align: middle;
+  color: #2D95FD;
+}
+.menu-social a {
+	font-size: 25px;
+	color: #fff;
+}
+.menu-social li a:hover {
+	color: #2D95FD;
+}
+.search-wrap{
+  position: relative;
+}
+.search-wrap::before {
+	position: absolute;
+	content: '';
+	left: -40px;
+	top: -65px;
+	width: 1px;
+	height: 150px;
+	background: #FBFDFF;
+}
+.search-wrap {
+	right: 28.5%;
+	float: right;
+	margin-top: 20px;
+}
+  .header-search {
+    cursor: pointer;
+    display: inline-block;
+  }
+  .header-search .search-icon {
+    min-width: 25px;
+    text-align: center;
+    font-size: 16px; 
+  }
+  
+  .header-search-form {
+    background-color: #fff;
+    height: 0;
+    margin-right: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 320px;
+    z-index: 9999;
+  }
+    .header-search-form form {
+      position: relative;
+      margin: 15px 15px 0; 
+    }
+    .header-search-form input {
+      height: 50px;
+      padding-right: 50px; 
+    }
+    .header-search-form button[type="submit"] {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      border: medium none;
+      color: #2D95FD;
+      display: block;
+      font-size: 18px;
+      height: 60px;
+      line-height: 48px;
+      position: absolute;
+      right: 8px;
+      text-align: center;
+      top: -4px;
+      padding: 1px 6px;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .header-search-form button[type="submit"]:hover {
+        color: #2D95FD; 
+        cursor: pointer;
+      }
+  
+  .search-icon {
+    position: relative; 
+    cursor: pointer;
+  }
+  .search-icon i {
+    color: #fff;
+  }
+  .search-icon i::before {
+    vertical-align: middle;
+  }
+  .search-icon .for-search-close {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden; 
+  }
+  
+  .search-open.header-search-form {
+    height: 75px; 
+  }
+
+  .search-open .for-search-show {
+    opacity: 0;
+    visibility: hidden;
+   }
+  
+  .search-open .for-search-close {
+    opacity: 1;
+    visibility: visible; 
+  }
+  .search-border {
+    padding: 61px 60px;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+  }
+  .header-info {
+    float: right;
+  }
+  .header-info span {
+    display: block;
+    color: #ffff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* ==========================================================================
+    Side mobile menu css
+  ========================================================================== */
+  .info__area-inner {
+    position: fixed;
+    right: -370px;
+    top: 0;
+    padding: 30px;
+    width: 350px;
+    height: 100%;
+    background-color: #2D95FD;
+    overflow-y: scroll;
+    -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .info__area.info-opened {
+    visibility: visible;
+    opacity: 1;
+  }
+  .info__area.info-opened .info__area-inner {
+    right: -20px;
+  }
+  .info__logo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    }
+    .info-close-btn i {
+    font-size: 16px;
+    }
+  .info__close-icon button {
+    color: #111111;
+    background-color: transparent;
+  }
+  .body-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .body-overlay.opened {
+    opacity: 1;
+    visibility: visible;
+  }
+  .info_close-icon button {
+    background: #fff;
+    color: #111111;
+    font-size: 17px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+  }
+  .side-mobile-menu {
+    display: none;
+  }
+  .side-mobile-menu ul li {
+    display: block;
+  }
+  .side-mobile-menu ul li:last-child a {
+    border-bottom: none;
+  }
+  .side-mobile-menu ul li a {
+    padding: 13px 0;
+    display: block;
+    border-bottom: 1px solid #2b2b2b;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+  }
+  .side-mobile-menu ul li a:hover {
+    color: #111111;
+    padding-left: 5px;
+  }
+  .side-mobile-menu ul li a[aria-expanded=true] {
+    color: #111111;
+  }
+  .side-mobile-menu ul li a[aria-expanded=true]:before {
+    background: #111111;
+    border-color: #111111;
+  }
+  .side-mobile-menu ul li ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .side-mobile-menu ul li ul li {
+    padding-left: 15px;
+  }
+  .side-mobile-menu ul li ul li:hover > a {
+    color: #fff;
+    padding-left: 20px;
+  }
+  .side-mobile-menu ul li ul li:hover > a:before {
+    background: #111111;
+    border-color: #111111;
+  }
+  .side-mobile-menu ul li ul li a {
+    position: relative;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  .side-mobile-menu ul li ul li a:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #111111;
+    border-radius: 50%;
+  }
+  .side-mobile-menu ul li ul li a[aria-expanded=true] {
+    padding-left: 20px;
+  }
+  .side-mobile-menu ul li.submenu > a:after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    border-color: initial;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    transition: all 0.3s ease-out;
+  }
+  .side-mobile-menu ul li.submenu a[aria-expanded=true]:after {
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  /* ==========================================================================
+    Header Css End
+  ========================================================================== */
+
+  /* ==========================================================================
+    Banner Css Start
+  ========================================================================== */
+  .banner-area {
+    min-height: 1080px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+  }
+.slider-content span {
+	color: #FCFCFC;
+	font-size: 20px;
+	margin-bottom: 65px;
+	display: inline-block;
+	text-transform: uppercase;
+	background: #3C4346;
+	padding: 12px 25px;
+}
+  .slider-content h2 {
+    font-size: 90px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #fff;
+  }
+  .slider-shape-1 {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .slider-shape-2 {
+    position: absolute;
+    right: -92px;
+    top: -113px;
+    bottom: 0px;
+  }
+.slider-shape-3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.slider-shape-4 {
+	position: absolute;
+	right: 4px;
+	top: -1px;
+}
+.slider-shape-5 {
+	position: absolute;
+	right: -69px;
+	top: -90px;
+	transform: rotate(0deg);
+}
+  /* ==========================================================================
+    Banner Css End
+  ========================================================================== */
+
+/* ==========================================================================
+    Experence Css start
+  ========================================================================== */
+  .experence-area {
+    background: #0F0D1D;
+    position: relative;
+}
+.experience-shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+}
+.expercence-content h2 {
+  color: #fff;
+}
+.expercence-iteam {
+	background: #000;
+	padding: 90px 30px;
+	display: flex;
+	z-index: 99;
+	position: relative;
+}
+.expercence-item-content h4 {
+	color: #fff;
+	margin-bottom: 40px;
+	max-width: 237px;
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+.expercence-item-icon {
+  align-items: end;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+.expercence-item-icon i {
+	color: #3C72FC;
+	font-size: 70px;
+}
+.expercence-btn::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 28px;
+  width: 25px;
+  height: 3px;
+  background: #707070;
+  transition: .3s;
+}
+.expercence-btn:hover::before {
+	width: 30px;
+  background: #3C72FC;
+}
+.expercence-btn {
+  position: relative;
+}
+.brand-slider.owl-carousel .owl-nav button {
+	background: #192041;
+	height: 47px;
+	width: 47px;
+	color: #fff;
+	border: 1px solid #3C72FC;
+	cursor: pointer;
+}
+.brand-slider.owl-carousel .owl-nav button[type="button"] {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	outline: none;
+}
+.brand-slider.owl-carousel .owl-nav button.owl-next {
+	right: -124px;
+	left: auto;
+} 
+.brand-slider.owl-carousel .owl-nav button.owl-prev {
+	margin-left: -125px;
+}
+.brand-slider.owl-carousel .owl-dots button{
+width: 15px;
+height: 15px;
+background-color: #3C72FC;
+margin: 0px 5px;
+border-radius: 50px;
+outline: none; 
+}
+.brand-slider.owl-carousel .owl-dots{
+position: absolute;
+left: 50%;
+bottom: 20px;
+transform: translateX(-50%);
+}
+.brand-slider.owl-carousel .owl-dots .active{
+background-color: #fff;
+}
+/* ==========================================================================
+    Experence Css End
+  ========================================================================== */
+
+  /* ==========================================================================
+    Clients Css Start
+  ========================================================================== */
+
+.clinets-area h4 {
+    color: #fff;
+    position: relative;
+}
+
+.clinets-area h4:before {
+  height: 1px;
+  width: 42%;
+  content: '';
+  background: #32303D;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.clinets-area h4:after {
+  height: 1px;
+  width: 42%;
+  content: '';
+  background: #32303D;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+ /* ==========================================================================
+    Clients Css end
+  ========================================================================== */
+
+  
+ /* ==========================================================================
+    About Css start
+  ========================================================================== */
+  .about-area {
+    position: relative;
+  }
+  .about-shape-1 {
+    position: absolute;
+    right: 0%;
+    top: -60%;
+    z-index: -1;
+  }
+  .about-shape-2 {
+    position: absolute;
+    bottom: -50%;
+    left: -15%;
+    z-index: -1;
+  }
+  .about-content-wrapper {
+    position: relative;
+    max-width: 585px;
+    padding-left: 60px;
+  }
+  .about-angle-text {
+    position: absolute;
+    right: -70%;
+    transform: rotate(90deg);
+    top: 60%;
+  }
+  
+  .about-angle-text span {
+    font-size: 123px;
+    color: #F2F4F8;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 30px;
+  }
+.about-left {
+  position: relative;
+}
+.about-play {
+	position: absolute;
+	top: 60px;
+	left: -50px;
+}
+.about-play span {
+	background: #3C72FC;
+	color: #fff;
+	width: 125px;
+	height: 123px;
+	display: block;
+	line-height: 123px;
+	text-align: center;
+	font-size: 25px;
+  animation: pulse 2s infinite;
+}
+.buttom-img {
+	position: absolute;
+	bottom: -25%;
+	right: -15px;
+	border: 30px solid #ffff;
+}
+.about-content-wrapper h4 {
+	font-size: 26px;
+	font-weight: 300;
+  color: #3C72FC;
+  margin-bottom: 70px;
+}
+.about-info-icon {
+  margin-right: 20px;
+}
+.about-info-icon i::before {
+	width: 70px;
+	height: 70px;
+	display: block;
+	background: #B0F5FF;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+}
+.about-info-text ul li:first-child {
+	color: #726F84;
+  font-size: 20px;
+}
+.about-info-text ul li:last-child{
+   color: #0F0D1D;
+   font-size: 18px;
+}
+.about-info-text ul li {
+  margin-bottom: 10px;
+}
+.about-info-text {
+  padding-top: 5px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(32, 27, 27, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 45px rgba(46, 37, 37, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(39, 27, 27, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(41, 28, 28, 0.4);
+    box-shadow: 0 0 0 0 rgba(36, 28, 28, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 45px rgba(44, 33, 33, 0);
+    box-shadow: 0 0 0 45px rgba(43, 32, 32, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(48, 33, 33, 0);
+    box-shadow: 0 0 0 0 rgba(44, 35, 35, 0);
+  }
+}
+
+ /* ==========================================================================
+    About Css End
+  ========================================================================== */
+
+  /* ==========================================================================
+    Skills Css Start
+  ========================================================================== */
+  .skills-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section-width {
+    max-width: 444px;
+  }
+  .skills-bar .bar {
+    margin-bottom: 25px;
+  }
+  .info span {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 5px;
+    display: block;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 15px;
+  }
+  .skills-bar .bar .progress-line {
+    height: 18px;
+    width: 100%;
+    background: #F2F4F8;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: skillsanimate 1s cubic-bezier(1,0,0.5,1) forwards;
+    border-radius: 10px;
+  }
+  .bar .progress-line span{
+     position: absolute;
+     height: 100%;
+     width: 80%;
+     background: #3C72FC;
+     border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: skillsanimate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line span::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 25px;
+    opacity: 0;
+    animation: skillsanimate2 0.5s 1.5s linear forwards;
+  }
+  @keyframes skillsanimate2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .bar .progress-line.consulting span {
+    width: 88%;
+  }
+  .bar .progress-line.advice span {
+    width: 68%;
+  }
+  .bar .progress-line.consulting span::before {
+    content: '88%';
+  }
+  .bar .progress-line.advice span::before {
+    content: '68%';
+  }
+  @keyframes skillsanimate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  /* ==========================================================================
+    Skills Css End
+  ========================================================================== */
+
+
+  /* ==========================================================================
+    Case Study Css Start
+  ========================================================================== */
+  .case-studs {
+    padding: 200px 0px;
+  }
+  .case-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 570px;
+    z-index: 1;
+}
+.case-content {
+	position: absolute;
+	height: 345px;
+	width: 90%;
+	padding: 70px 0px 0px 70px;
+	left: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	transition: .3s;
+}
+.case-item:hover .case-content {
+  background-color: #3c72fc;
+}
+.case-content i {
+  font-size: 60px;
+  color: #fff;
+}
+.case-content p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+.case-content h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  max-width: 200px;
+  font-size: 28px;  
+}
+
+  /* ==========================================================================
+    Case Study Css End
+  ========================================================================== */
+
+
+    /* ==========================================================================
+    Personal Advice Css Start
+  ========================================================================== */
+  .persona-advice-wrapper.d-f {
+    padding-left: 70px;
+  }
+  .advice-count span {
+    display: block;
+    height: 70px;
+    width: 70px;
+    background: #EBF1FF;
+    text-align: center;
+    line-height: 68px;
+    color: #3C72FC;
+    font-size: 24px;
+    border-radius: 3px;
+    margin-right: 20px;
+  }
+  .personal-advice h4 {
+    margin-bottom: 10px;
+  }
+  .personal-advice p {
+    width: 65%;
+  }
+  .persona-advice-wrapper {
+    box-shadow: 0px 30px 60px rgba(117, 116, 116, 0.25);
+    padding: 70px 50px;
+    position: relative;
+    margin-bottom: -185px;
+    z-index: 99;
+    background: #fff;
+  }
+  .advice-count {
+    margin-bottom: 20px;
+  }
+/* ==========================================================================
+    Personal Advice Css End
+  ========================================================================== */
+
+/* ==========================================================================
+    Mission Css Start
+  ========================================================================== */
+  .mission-area {
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.mission-content h2 {
+	max-width: 56%;
+	color: #FFFFFF;
+	font-size: 60px;
+	line-height: 1.1;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/* ==========================================================================
+    Mission Css End
+ ========================================================================== */
+
+/* ==========================================================================
+    Accordign Css Start
+ ========================================================================== */
+ 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body {
+	padding: 10px 60px 10px 0px;
+}
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+}
+.card-header h3:hover {
+	color: #3C72FC;
+}
+.card{
+  padding: 30px;
+  box-shadow: 0px 0px 30px rgba(162, 158, 158, 0.25);
+  margin-bottom: 35px;
+}
+.card-header h3 span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #3C72FC;
+}
+.card-header i {
+	cursor: pointer;
+}
+.card-header .fa.fa-plus {
+	color: #3C72FC;
+}
+.gray-bg {
+  background: #ddd;
+}
+.accor-bg-active {
+	background: #fff;
+}
+.according-img img {
+  width: 100%;
+}
+.business-content-btm.according-content ul li {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.year-experience {
+	text-align: center;
+	background: #3c72fc;
+	display: inline-block;
+	padding: 40px 52px;
+}
+.year-experience h3 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+}
+.year-experience span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 120px;
+}
+.experience-left {
+	text-align: right;
+}
+
+
+/* ==========================================================================
+    According Css End
+ ========================================================================== */
+
+
+/* ==========================================================================
+    Testimonial Css Start
+ ========================================================================== */
+ .testimonials-area {
+	background: #F2F4F8;
+}
+.testimonials-area h2 {
+	font-size: 65px;
+	line-height: 1.1;
+	margin-bottom: 20px;
+}
+.single-testimonial img {
+	transform: translateY(50%);
+}
+ .single-testimonial {
+	padding: 30px 30px 0 30px;
+	background: #fff;
+	color: #051235;
+  position: relative;
+}
+.single-testimonial i {
+	font-size: 70px;
+	color: #F2F4F8;
+}
+.single-testimonial p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.testimoni-title img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.testimonials-title h5 {
+	font-size: 16px;
+	color: #3C72FC;
+	font-weight: 400;
+	line-height: 26px;
+  text-transform: uppercase;
+}
+.testimonials-title span {
+	color: #726F84;
+	font-size: 12px;
+  line-height: 24px;
+	text-transform: uppercase;
+}
+.testimoni-icon label {
+  color: #4B4B4B;
+}
+.single-testimonial p {
+	margin-bottom: 30px;
+	font-size: 16px;
+	color: #726F84;
+}
+.testimoni-info {
+	justify-content: space-between;
+}
+
+.single-testimonial img {
+  width: 110px!important;
+  z-index: 99;
+  margin-bottom: 70px;
+}
+.testimonials-quote {
+	position: absolute;
+	right: 40px;
+	top: 40%;
+}
+/*==== testimonial Arrow  ====*/
+.testimonials-slider .owl-nav {
+	position: absolute;
+	left: -52%;
+	top: 80%;
+}
+.testimonials-slider button {
+	background: #fff;
+	border: none;
+	text-align: center;
+	width: 65px;
+	height: 65px;
+	line-height: 70px;
+	border-radius: 50%;
+  cursor: pointer;
+}
+ .testimonials-slider button:hover{
+  background:#3c72fc;
+  color: #fff;
+}
+.testimonials-area .owl-nav .owl-next {
+	left: 80px;
+	position: absolute;
+}
+.testimonials-slider button i {
+  font-size: 21px;
+}
+/* ==========================================================================
+    Testimonial Css End
+ ========================================================================== */
+
+/* ==========================================================================
+    Counter Css Start
+ ========================================================================== */
+
+ .counter-area {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 562px;
+  position: relative;
+  z-index: 1;
+}
+.counter-icon span {
+	width: 110px;
+	height: 110px;
+	background: #000;
+	display: inline-block;
+	line-height: 120px;
+	color: #3C72FC;
+	font-size: 50px;
+}
+.counter-content h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 30px 0px;
+}
+.counter-content p {
+	color: #fff;
+}
+.counter-border {
+  position: relative;
+}
+.counter-border::before {
+  position: absolute;
+  content: '';
+  left: -14px;
+  top: 9px;
+  width: 2px;
+  height: 203px;
+  background: #707070;
+}
+
+/* ==========================================================================
+    Counter Css End
+ ========================================================================== */
+
+
+/* ==========================================================================
+    business Css Start
+ ========================================================================== */
+ .bussiness-buttom-area{
+   position: relative;
+ }
+ .business-top-content {
+	padding: 70px 40px;
+	text-align: center;
+	box-shadow: 0px 0px 30px rgba(162, 158, 158, 0.25);
+	text-transform: uppercase;
+  background: #D6D6D6;
+	transition: .3s;
+}
+.business-top-content:hover {
+	background: #fff;
+  box-shadow: 0px 30px 60px rgba(117, 116, 116, 0.25);
+}
+.business-area-top {
+	position: relative;
+	margin-top: -100px;
+	z-index: 99;
+}
+.business-top-content:hover h4 {
+	color: #3C72FC;
+}
+
+.business-info-text h4 {
+  font-size: 20px;
+}
+.business-info-icon span {
+	height: 70px;
+	width: 70px;
+	background: #EBF1FF;
+	display: inline-block;
+	color: #2D95FD;
+	line-height: 85px;
+	text-align: center;
+	font-size: 35px;
+}
+.business-info-text h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.business-info-text {
+	padding: 0 43px;
+}
+
+.business-content-btm span {
+  vertical-align: middle;
+  color: #2d95fd;
+  margin-right: 20px;
+}
+.business-content-btm li {
+  margin-bottom: 5px;
+}
+.business-right-img {
+	position: absolute;
+	top: 0;
+	right: 11.6%;
+	width: 22%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* ==========================================================================
+    business Css End
+ ========================================================================== */
+
+/* ==========================================================================
+    According Css Start
+ ========================================================================== */
+
+ .accordion{
+  padding:100px;
+}
+
+.accordion .accordion-item {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding:15px 20px;
+  margin-top:20px;
+  border-radius:10px;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+/*   border-bottom: 1px solid #03b5d2; */
+}
+.accordion h2 {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+/*    padding: 1em 0; */
+  color: #333333;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  padding:0px;
+  line-height:25px;
+  margin:0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.accordion h2:hover, .accordion h2:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion h2:hover::after, .accordion h2:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion h2 .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion h2 .icon {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.faq-content {
+    padding: 80px 0px;
+}
+.accordion h2 .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion h2 .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion h2[aria-expanded=true] {
+  color: #03b5d2;
+}
+.accordion h2[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion h2[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 5000px;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* ==========================================================================
+    According Css End
+ ========================================================================== */
+
+/* ==========================================================================
+    Footer Css Start
+ ========================================================================== */
+ .footer-area {
+	background: #0F0D1D;
+  position: relative;
+}
+.footer-shape {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 700px;
+	height: 504px;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+.footer-top {
+	padding: 120px 0px;
+}
+.footer_widget-content p {
+	color: #8F8DA0;
+  margin-bottom: 30px;
+}
+.footer-contact-info {
+	border-top: 1px solid #313030;
+	padding-top: 30px;
+}
+.footer-contact-info ul li {
+  margin-bottom: 15px;
+  color: #8F8DA0;
+}
+.footer-contact-info li i::before {
+	vertical-align: middle;
+  color: #2D95FD;
+	margin-right: 15px;
+}
+.footer_widget-title h4 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 28px;
+}
+.footer_menu ul li {
+  margin-bottom: 20px;
+}
+.footer_menu li a {
+  font-weight: 600;
+  color: #8F8DA0;
+  transition: .3s;
+}
+.footer_menu li a:hover{
+  color:#3C72FC;
+}
+.footer-service ul li {
+  margin-bottom: 20px;
+}
+.footer-service li a {
+  color: #8F8DA0;
+  font-weight: 600;
+}
+.footer-service li a:hover{
+  color:#3C72FC;
+}
+.footer_subscribe-form {
+	background: #06050C;
+	padding: 40px 55px;
+	position: relative;
+	z-index: 1;
+}
+.subscribe-box {
+	background: #fff;
+  position: relative;
+}
+.footer_subscribe-form input {
+  width: 68%;
+  height: 65px;
+  padding: 0px 20px;
+}
+.footer_subscribe-form button {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	border: none;
+	background: #3C72FC;
+	color: #fff;
+	text-transform: uppercase;
+	height: 44px;
+	padding: 0px 25px;
+	cursor: pointer;
+  transition: .3s;
+}
+.footer_subscribe-form button:hover {
+	background: #0F0D1D;
+}
+.footer_subscribe-form h4 {
+	color: #8F8DA0;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+/* ==========================================================================
+    Footer Css End
+ ========================================================================== */
+
+ /* ==========================================================================
+    Copy Right Css Start
+ ========================================================================== */
+ .footer-copyright {
+	border-top: 1px solid #313030;
+	padding: 35px 0px;
+}
+ .copyright-left p {
+   font-weight: 400;
+	color: #8F8DA0;
+}
+.copyright-social ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.copyright-social li a {
+  color: #fff;
+  font-size: 25px;
+  transition: .3s;
+}
+.copyright-social li a:hover{
+  color: #3C72FC;
+}
+.footer-copyright {
+	border-top: 1px solid #313030;
+}
+
+ /* ==========================================================================
+    Copy Right Css End
+ ========================================================================== */
+
+  /* ==========================================================================
+    Scroll Top Css
+  ==========================================================================  */
+  .scroll-top {
+    background: #2D95FD;
+    bottom: 44px;
+    position: fixed;
+    right: 1px;
+    z-index: 9;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    line-height: 57px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+  }
+    .scroll-top span {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    }
+    .scroll-top:hover {
+     color: #fff;
+     background-color: #0F0D1D;
+    }
+
+  /* ==========================================================================
+    Scroll Top Css End
+  ==========================================================================  */
+
+  /* ==========================================================================
+    preloader Css Start
+  ========================================================================== */
+.preloader-bg{
+	position:fixed;
+	width:100%;
+	height: 100%;
+	background: #2D95FD;
+	z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+    background-color: #fff;
+    width: 7px;
+    height: 40px;
+    margin: 0px 5px;
+    border: none;
+    animation: size 0.8s infinite linear;
+    border-radius: 20px;
+}
+
+.line-1{
+    animation-delay: 0.60s;
+}
+.line-2{
+    animation-delay: 0.30s;
+}
+.line-3{
+    animation-delay: 0s;
+    }
+
+@keyframes size{
+    0%{
+        height: 40px;
+    }
+    25%{
+        height: 60px;
+    }
+    50%{
+        height: 90px;
+    }
+    75%{
+        height: 60px;
+    }
+    100%{
+        height: 40px;
+    }
+}
+ /* ==========================================================================
+    preloader Css End
+  ========================================================================== */
+
+
+
+
+
